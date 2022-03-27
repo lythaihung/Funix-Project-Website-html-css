@@ -1,0 +1,164 @@
+body {
+    background-image: url("./data/nui cam 1.jpg");
+    background-size: 120% 120%;
+    background-repeat: repeat;
+    background-position: left top;
+    background-attachment:fixed;
+    color: rgb(0, 0, 0);
+}
+/*chỉnh font cho từng phần*/
+h1 {
+    font-family: 'Bevan', cursive;
+}
+h2, h3, h4, p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255, 0.2);
+
+}
+.navbar a, #myScrollspy a, .footer-sidebar a, #footer-footer a  {
+    font-family: 'Pacifico', cursive;
+    color: hsl(0, 0%, 100%) !important;
+    letter-spacing: 1px;
+}
+/*style chung cho các box*/
+
+#main-1 , #main-2, #main-3 {
+    background-color: rgb(255, 255, 255);
+    padding: 40px 30px;
+    margin: 30px 0px;
+    border-radius: 20px ;
+}
+#main-4{
+    margin-bottom: 60px;
+}
+/*style cho sidebar*/
+#myScrollspy {
+    position: fixed ;
+    background-color: #09A603;
+}
+
+#myScrollspy li a {
+    text-decoration: none;
+    font-size: large;
+    padding: 30px 30px;
+    color: #fff;
+    transition: width 2s ;
+}
+#myScrollspy li a:hover {
+    color: #09A603 !important;
+    background-color: #fff;
+    width: 110% ;
+}
+#myScrollspy li:hover {
+    box-shadow: 3px 3px 5px rgb(65, 97, 68);
+}
+
+.footer-sidebar {
+    position: fixed ;
+    margin-top: 450px;
+}
+
+.footer-sidebar li a {
+    text-decoration: none;
+    font-size: large;
+    padding: 15px 30px;
+    margin-bottom: 15px;
+    padding-right: 65px;
+    color: rgb(255, 255, 255);
+    background-color:  #09A603;
+   
+}
+.footer-sidebar li a:hover {
+    color: #09A603 !important;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2.5px 5px rgb(65, 97, 68);
+   
+}
+.footer-sidebar li {
+    transition: transform 1s;
+
+}
+.footer-sidebar li:hover {
+    transform: scale(1.2,1.2);
+
+}
+.footer-sidebar li:visited {
+
+}
+#footer-footer {
+    background-color: rgb(255, 255, 255);
+    padding: 40px 30px;
+    margin: 30px 0px;
+    border-radius: 20px ;
+}
+#footer-footer a {
+    text-decoration: none;
+    font-size: large;
+    padding: 10px 10px;
+    color: rgb(0, 0, 0) !important;
+    background-color:  #ffffff;
+    border-radius: 5px;
+    
+}
+#footer-footer a:hover {
+    text-decoration: none;
+    font-size: large;
+    padding: 10px 10px;
+    color: rgb(255, 255, 255) !important;
+    background-color:  #09A603;
+    border-radius: 5px;
+    
+}
+
+#footer-footer .col-footer{
+    margin-bottom: 40px;
+}
+
+/*style cho nav*/
+.navbar {
+    background-color:#09A603 ;
+    border-radius: 0;
+    border: 0;
+}
+.navbar a {
+    transition: transform 0.7s;
+    font-size: large;
+}
+.navbar a:hover {
+    transform: scale(1.1,1.1);
+}
+/*style cho slide*/
+#myCarousel a {
+    background-image: none;
+}
+/*style hiệu ứng hover cho các hình*/
+.image img {
+    transition: transform 1s;
+}
+.image img:hover {
+    transform: scale(1.1,1.1) ;
+    box-shadow: 2px 2.5px 5px rgb(65, 97, 68);
+}
+
+
+
+@media only screen and (max-width: 768px)
+    {
+        .sidebar {
+            display: none !important;
+        }
+        #footer-footer {
+            display:  block !important;
+        }
+        body {
+        background-size: auto 100%;}
+        .subpage h3 {
+            font-size: small;
+                
+        }
+        .navbar-brand {
+            width: 80%;
+        }
+    }
